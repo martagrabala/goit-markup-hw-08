@@ -4,10 +4,13 @@
 
 .our-team__list {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .our-team__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .our-team__grid {
@@ -16,6 +19,7 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  max-width: 450px; 
 }
 
 .our-team__name {
@@ -40,7 +44,8 @@
   display: flex;
   margin-top: 16px;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  margin-right: 10px;
 }
 
 .our-team__social-link {
@@ -53,11 +58,96 @@
   justify-content: center;
   fill: #afb1b8;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
     &:focus,
     &:hover {
   background-color: #2196f3;
   fill: #ffffff;
+}
+}
+
+
+
+
+
+
+
+
+
+  @media screen and (min-width: 768px){
+.our-team__list{
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.our-team__item {
+   &:nth-child(odd){
+    margin-right: 30px;
+  }
+}
+
+.our-team__grid{
+  max-width: 354px;
+}
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 1200px){
+.our-team__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our-team__grid{
+  max-width: 270px;
+}
 
 }
-}
+// .our-team__name {
+//   font-weight: 500;
+//   font-size: 16px;
+//   line-height: 1.188;
+//   letter-spacing: 0.03em;
+//   margin-top: 30px;
+//   margin-bottom: 10px;
+//   text-align: center;
+// }
+
+// .our-team__position {
+//   font-size: 16px;
+//   line-height: 1.188;
+//   letter-spacing: 0.03em;
+//   color: var(--secondary-color);
+//   text-align: center;
+// }
+
+// .our-team__socials {
+//   display: flex;
+//   margin-top: 16px;
+//   align-items: center;
+//   justify-content: space-evenly;
+// }
+
+// .our-team__social-link {
+//   display: flex;
+//   width: 44px;
+//   height: 44px;
+//   background-color: #fff;
+//   border-radius: 50%;
+//   align-items: center;
+//   justify-content: center;
+//   fill: #afb1b8;
+//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  //   &:focus,
+  //   &:hover {
+  // background-color: #2196f3;
+  // fill: #ffffff;
+
+// }
+// }

@@ -70,7 +70,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero__header">
-            EFEKTYWNE&nbsp;ROZWIĄZANIA <br/>
+            EFEKTYWNE&nbsp;ROZWIĄZANIA <br />
             DLA WASZEGO BIZNESU
           </h1>
 
@@ -82,13 +82,12 @@
       <!-- END HERO -->
 
       <!-- CONTENT -->
-      <section class="content section"> 
+      <section class="content section">
         <div class="container">
-          
           <ul class="content__list list">
             <li class="content__card">
               <div class="content__container">
-                <svg width="70" height="70">
+                <svg class="content__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-antena"></use>
                 </svg>
               </div>
@@ -143,13 +142,14 @@
       <!-- END CONTENT -->
 
       <!-- ABOUT US -->
-      <!-- <section class="about-us section">
+      <section class="about-us section">
         <div class="container">
           <h2 class="secondary-header">Czym się zajmujemy</h2>
 
           <ul class="about-us__list list">
             <li class="about-us__item">
-              <img class="about-us__picture"
+              <img
+                class="about-us__picture"
                 src="./images/main/box1.jpg"
                 height="294"
                 alt="Zbliżenie na ręcę osoby piszącej na klawiaturze kod"
@@ -179,24 +179,49 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- END ABOUT US -->
 
       <!-- OUR TEAM -->
 
-      <!-- <section class="our-team section">
-        
+      <section class="our-team section">
         <div class="container">
           <h2 class="secondary-header">Nasz zespół</h2>
 
-          <ul class="our-team__list list"> -->
+          <ul class="our-team__list list">
+            <!-- 1st member card -->
 
-      <!-- 1st member card -->
-
-      <!-- <li class="our-team__item">
+            <li class="our-team__item">
               <div class="our-team__grid">
-                <img src=images/main/img1.jpg height="260" alt="Młody mężczyzna
-                w okularach, z zarostem, ubrany w bordową koszulę">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/main/team-members/mobile-member1.jpg    1x,
+                      ./images/main/team-members/mobile-member1-2x.jpg 2x
+                    "
+                    media="(max-width: 667px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/main/team-members/tablet-member1.jpg    1x,
+                      ./images/main/team-members/tablet-member1-2x.jpg 2x
+                    "
+                    media="(min-width: 668px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/main/team-members/desktop-member1.jpg    1x,
+                      ./images/main/team-members/desktop-member1-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/main/team-members/mobile-member1.jpg"
+                    alt="Młody mężczyzna
+                w okularach, z zarostem, ubrany w bordową koszulę"
+                  />
+                </picture>
+
                 <p class="our-team__name">John Doe</p>
                 <p class="our-team__position">Product Designer</p>
                 <ul class="our-team__socials list">
@@ -233,18 +258,41 @@
                   </li>
                 </ul>
               </div>
-            </li> -->
+            </li>
 
-      <!-- 2nd member card -->
+            <!-- 2nd member card -->
 
-      <!-- <li class="our-team__item">
+            <li class="our-team__item">
               <div class="our-team__grid">
-                <img
-                  src="./images/main/img2.jpg"
-                  height="260"
-                  alt="Młoda kobieta w
+                <picture>
+                  <source
+                    srcset="
+                      ./images/main/team-members/mobile-member2.jpg    1x,
+                      ./images/main/team-members/mobile-member2-2x.jpg 2x
+                    "
+                    media="(max-width: 667px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/main/team-members/tablet-member2.jpg    1x,
+                      ./images/main/team-members/tablet-member2-2x.jpg 2x
+                    "
+                    media="(min-width: 668px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/main/team-members/desktop-member2.jpg    1x,
+                      ./images/main/team-members/desktop-member2-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/main/team-members/mobile-member2.jpg"
+                    alt="Młoda kobieta w
             okularach, ubrana w marynarkę"
-                />
+                  />
+                </picture>
+
                 <p class="our-team__name">John Doe</p>
                 <p class="our-team__position">Frontend Developer</p>
 
@@ -282,17 +330,39 @@
                   </li>
                 </ul>
               </div>
-            </li> -->
+            </li>
 
-      <!-- 3rd member card -->
-      <!-- <li class="our-team__item">
+            <!-- 3rd member card -->
+            <li class="our-team__item">
               <div class="our-team__grid">
-                <img
-                  src="./images/main/img3.jpg"
-                  height="260"
-                  alt="Młody mężczyzna z
+                <picture>
+                  <source
+                    srcset="
+                      ./images/main/team-members/mobile-member3.jpg 1x,
+                      ./images/main/team-members/mobile-member3-2x.jpg 2x"
+                    media="(max-width: 667px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/main/team-members/tablet-member3.jpg    1x,
+                      ./images/main/team-members/tablet-member3-2x.jpg 2x
+                    "
+                    media="(min-width: 668px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/main/team-members/desktop-member3.jpg    1x,
+                      ./images/main/team-members/desktop-member3-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <img
+                    src="./images/main/team-members/mobile-member3.jpg"
+                    alt="Młody mężczyzna z
             zarostem, ubrany w jasną koszulę"
-                />
+                  />
+                </picture>
                 <p class="our-team__name">John Doe</p>
                 <p class="our-team__position">Marketing</p>
 
@@ -330,18 +400,39 @@
                   </li>
                 </ul>
               </div>
-            </li> -->
+            </li>
 
-      <!-- 4th member card -->
+            <!-- 4th member card -->
 
-      <!-- <li class="our-team__item">
+            <li class="our-team__item">
               <div class="our-team__grid">
-                <img
-                  src="./images/main/img4.jpg"
-                  height="260"
-                  alt="Młody mężczyzna w
+                <picture>
+                  <source
+                    srcset="
+                      ./images/main/team-members/mobile-member4.jpg 1x,
+                      ./images/main/team-members/mobile-member4-2x.jpg 2x"
+                    media="(max-width: 667px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/main/team-members/tablet-member4.jpg    1x,
+                      ./images/main/team-members/tablet-member4-2x.jpg 2x
+                    "
+                    media="(min-width: 668px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/main/team-members/desktop-member4.jpg    1x,
+                      ./images/main/team-members/desktop-member4-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/main/team-members/mobile-member4.jpg"
+                    alt="Młody mężczyzna w
             okularach, z zarostem, ubrany w czarny t-shirt"
-                />
+                  />
+                </picture>
                 <p class="our-team__name">John Doe</p>
                 <p class="our-team__position">UI Designer</p>
 
@@ -382,7 +473,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- END OUR TEAM -->
 
