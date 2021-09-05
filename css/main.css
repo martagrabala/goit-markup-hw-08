@@ -46,25 +46,30 @@ img {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 738px;
-    padding: 0px 15px;
-    margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
-    padding: 0px 15px;
-    margin: 0 auto;
   }
 }
 
 .section {
-  padding-top: 94px;
+  padding-top: 60px;
 }
 
 .section:not(.content) {
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+  }
+  .section:not(.content) {
+    padding-bottom: 94px;
+  }
 }
 
 :root {
@@ -377,7 +382,6 @@ img {
 }
 
 .hero__header {
-  width: 370px;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.612;
@@ -424,7 +428,6 @@ img {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main/hero/hero-desktop.jpeg");
   }
   .hero__header {
-    width: 665px;
     font-size: 44px;
     line-height: 1.363;
   }
@@ -438,10 +441,12 @@ img {
 
 .content .container {
   display: flex;
+  justify-content: center;
 }
 
 .content__list {
   display: flex;
+  flex-direction: column;
 }
 
 .content__card {
@@ -450,12 +455,11 @@ img {
 }
 
 .content__card:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .content__container {
-  width: 270px;
-  height: 120px;
+  padding: 25px 190px;
   background: #f5f4fa;
   border-radius: 4px;
   display: flex;
@@ -491,15 +495,17 @@ img {
 }
 
 .about-us__item {
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .about-us__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .about-us__label {
   display: flex;
+  flex-direction: column;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.142px;
@@ -514,6 +520,40 @@ img {
   background-color: rgba(47, 48, 58, 0.8);
   position: absolute;
   bottom: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .about-us.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-us__list {
+    display: flex;
+  }
+  .about-us__item {
+    position: relative;
+  }
+  .about-us__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .about-us__label {
+    display: flex;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 .our-team {

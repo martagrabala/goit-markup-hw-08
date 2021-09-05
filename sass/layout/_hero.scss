@@ -1,4 +1,5 @@
 
+
 .hero {
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -21,7 +22,6 @@
 }
 
 .hero__header {
-  width: 370px;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.612;
@@ -94,7 +94,6 @@
     url("../images/main/hero/hero-desktop.jpeg");
 }
 .hero__header{
-  width: 665px;
   font-size: 44px;
   line-height: 1.363;
 }
