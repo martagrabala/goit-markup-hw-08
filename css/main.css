@@ -628,7 +628,7 @@ img {
   align-items: center;
 }
 
-.our-team__item:not(:last-child) {
+.our-team__item {
   margin-bottom: 30px;
 }
 
@@ -762,7 +762,7 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .customers__card {
-    min-width: 226px;
+    max-width: 226px;
   }
 }
 
@@ -808,7 +808,6 @@ img {
   text-decoration: none;
   font-style: normal;
   margin-top: 20px;
-  width: 246px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -946,6 +945,9 @@ img {
     display: flex;
     flex-direction: column;
   }
+  .footer__form-field {
+    padding-top: 60px;
+  }
   .footer__form-btn {
     margin-top: 20px;
     margin-bottom: 60px;
@@ -964,12 +966,12 @@ img {
   }
   .footer__contact-details {
     margin-right: 144px;
-    padding-left: 76px;
+    margin-left: 76px;
+    width: 253px;
   }
-}
-
-.footer__form {
-  min-width: 450px;
+  .footer__form {
+    min-width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -992,6 +994,7 @@ img {
   }
   .footer__direction {
     margin-top: 20px;
+    min-width: 246px;
   }
   .footer__social-media {
     padding-right: 0;
@@ -1027,6 +1030,8 @@ img {
 
 .portfolio-filter__btn {
   padding: 6px 22px;
+  margin-bottom: 15px;
+  min-width: 130px;
   background: #f5f4fa;
   border-radius: 4px;
   border: 0px;
@@ -1048,13 +1053,19 @@ img {
 .portfolio-filter__list {
   display: flex;
   margin-bottom: 50px;
-  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-filter__list {
+    justify-content: center;
+  }
 }
 
 .projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .projects__item:focus, .projects__item:hover {
@@ -1063,14 +1074,14 @@ img {
 
 .projects__container {
   position: relative;
-  width: 370px;
+  width: 450px;
   height: 294px;
   overflow: hidden;
   display: flex;
 }
 
 .projects__item {
-  width: 370px;
+  width: 450px;
   border: 1px solid #eeeeee;
   margin-bottom: 30px;
 }
@@ -1121,5 +1132,35 @@ img {
 .projects__overlay .projects__area {
   width: 381px;
   height: 196px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .projects {
+    justify-content: flex-start;
+  }
+  .projects__item {
+    width: 354px;
+  }
+  .projects__item:nth-child(odd) {
+    margin-right: 30px;
+  }
+  .projects__container {
+    width: 354px;
+    height: 294px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects {
+    justify-content: space-between;
+  }
+  .projects__item {
+    width: 370px;
+  }
+  .projects__container {
+    position: relative;
+    width: 370px;
+    height: 294px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

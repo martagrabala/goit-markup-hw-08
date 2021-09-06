@@ -58,7 +58,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px){
   .customers__card{
-    min-width: 226px;
+    max-width: 226px;
   }
 }
 
@@ -74,35 +74,4 @@
 .customers__card{
     max-width: 170px;
   }
-// .customers__card {
-//   display: flex;
-//   flex-direction: row;
-//   width: 170px;
-//   height: 92px;
-//   border: 1px solid #afb1b8;
-//   box-sizing: border-box;
-//   border-radius: 4px;
-//   align-items: center;
-//   justify-content: center;
-  
-//     &:hover,
-//     &:focus {
-//   border-color: #2196f3;
-// }
-// }
-
-// .customers__link {
-//   fill: #afb1b8;
-//   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//    &:hover,
-//    &:focus {
-//    fill: #2196f3;
-// }
-// }
-
-// .customers__logo {
-//   width: 106px;
-//   height: 60.04px;
-// }
 }

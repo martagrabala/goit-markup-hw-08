@@ -11,6 +11,8 @@
 
 .portfolio-filter__btn {
   padding: 6px 22px;
+  margin-bottom: 15px;
+  min-width: 130px;
   background: #f5f4fa;
   border-radius: 4px;
   border: 0px;
@@ -37,5 +39,13 @@
 .portfolio-filter__list {
   display: flex;
   margin-bottom: 50px;
-  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+
+@media screen and (min-width: 768px){
+.portfolio-filter__list {
+  justify-content: center;  
+}
 }

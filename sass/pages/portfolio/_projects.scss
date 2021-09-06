@@ -1,7 +1,7 @@
 .projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
     
     &__item:focus,
     &__item:hover {
@@ -11,16 +11,17 @@
 }
 }
 
+
 .projects__container {
   position: relative;
-  width: 370px;
+  width: 450px;
   height: 294px;
   overflow: hidden;
   display: flex;
 }
 
 .projects__item {
-  width: 370px;
+  width: 450px;
   border: 1px solid #eeeeee;
   margin-bottom: 30px;
 
@@ -43,8 +44,7 @@
 }
 
 .projects__area {
-  // padding-bottom: 20px;
-  // padding-left: 24px;
+  
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
@@ -71,9 +71,44 @@
 
     & .projects__title,
     & .projects__area{
-         width: 381px;
+        width: 381px;
         height: 196px;
     }
  
 }
 
+
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+  .projects{
+    justify-content: flex-start;
+  }
+  .projects__item{
+      width: 354px;
+      &:nth-child(odd){
+      margin-right:30px;
+    }
+  }
+
+  .projects__container {
+  width: 354px;
+  height: 294px;
+
+}
+}
+
+@media screen and (min-width: 1200px){
+  .projects{
+    justify-content: space-between;
+  }
+
+  .projects__item {
+  width: 370px;
+  }
+
+  .projects__container {
+  position: relative;
+  width: 370px;
+  height: 294px;
+  }
+}
