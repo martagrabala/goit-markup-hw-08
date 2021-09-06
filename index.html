@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <link
       rel="stylesheet"
@@ -18,11 +19,17 @@
     />
   </head>
   <body>
-    <!-- <header class="header">
+      <header class="header"> 
       <div class="container">
         <a class="logo link" href="index.html"
           ><span class="web">Web</span>Studio</a
         >
+
+        <div class="hamburger-menu">
+           <svg class="icon-hamburger" width="24" height="16">
+                  <use href="./images/icons.svg#icon-hamburger"></use>
+                </svg>
+        </div>
         <nav class="navigation">
           <ul class="navigation__list list">
             <li class="navigation__item">
@@ -62,7 +69,7 @@
           </ul>
         </div>
       </div>
-    </header> -->
+    </header> 
 
     <main class="main">
       <!-- HERO -->
@@ -196,27 +203,22 @@
                 <picture>
                   <source
                     srcset="
-                      ./images/main/team-members/mobile-member1.jpg    1x,
-                      ./images/main/team-members/mobile-member1-2x.jpg 2x
-                    "
-                    media="(max-width: 667px)"
-                  />
-                  <source
-                    srcset="
-                      ./images/main/team-members/tablet-member1.jpg    1x,
-                      ./images/main/team-members/tablet-member1-2x.jpg 2x
-                    "
-                    media="(min-width: 668px)"
-                  />
-                  <source
-                    srcset="
                       ./images/main/team-members/desktop-member1.jpg    1x,
                       ./images/main/team-members/desktop-member1-2x.jpg 2x
                     "
                     media="(min-width: 1200px)"
                   />
+
+                  <source
+                    srcset="
+                      ./images/main/team-members/tablet-member1.jpg    1x,
+                      ./images/main/team-members/tablet-member1-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
                   <img
                     src="./images/main/team-members/mobile-member1.jpg"
+                    srcset="./images/main/team-members/mobile-member1-2x.jpg"
                     alt="Młody mężczyzna
                 w okularach, z zarostem, ubrany w bordową koszulę"
                   />
@@ -267,27 +269,22 @@
                 <picture>
                   <source
                     srcset="
-                      ./images/main/team-members/mobile-member2.jpg    1x,
-                      ./images/main/team-members/mobile-member2-2x.jpg 2x
-                    "
-                    media="(max-width: 667px)"
-                  />
-                  <source
-                    srcset="
-                      ./images/main/team-members/tablet-member2.jpg    1x,
-                      ./images/main/team-members/tablet-member2-2x.jpg 2x
-                    "
-                    media="(min-width: 668px)"
-                  />
-                  <source
-                    srcset="
                       ./images/main/team-members/desktop-member2.jpg    1x,
                       ./images/main/team-members/desktop-member2-2x.jpg 2x
                     "
                     media="(min-width: 1200px)"
                   />
+
+                  <source
+                    srcset="
+                      ./images/main/team-members/tablet-member2.jpg    1x,
+                      ./images/main/team-members/tablet-member2-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
                   <img
                     src="./images/main/team-members/mobile-member2.jpg"
+                    srcset="./images/main/team-members/mobile-member2-2x.jpg"
                     alt="Młoda kobieta w
             okularach, ubrana w marynarkę"
                   />
@@ -338,27 +335,23 @@
                 <picture>
                   <source
                     srcset="
-                      ./images/main/team-members/mobile-member3.jpg 1x,
-                      ./images/main/team-members/mobile-member3-2x.jpg 2x"
-                    media="(max-width: 667px)"
-                  />
-                  <source
-                    srcset="
-                      ./images/main/team-members/tablet-member3.jpg    1x,
-                      ./images/main/team-members/tablet-member3-2x.jpg 2x
-                    "
-                    media="(min-width: 668px)"
-                  />
-                  <source
-                    srcset="
                       ./images/main/team-members/desktop-member3.jpg    1x,
                       ./images/main/team-members/desktop-member3-2x.jpg 2x
                     "
                     media="(min-width: 1200px)"
                   />
 
+                  <source
+                    srcset="
+                      ./images/main/team-members/tablet-member3.jpg    1x,
+                      ./images/main/team-members/tablet-member3-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+
                   <img
                     src="./images/main/team-members/mobile-member3.jpg"
+                    srcset="./images/main/team-members/mobile-member3-2x.jpg"
                     alt="Młody mężczyzna z
             zarostem, ubrany w jasną koszulę"
                   />
@@ -409,26 +402,22 @@
                 <picture>
                   <source
                     srcset="
-                      ./images/main/team-members/mobile-member4.jpg 1x,
-                      ./images/main/team-members/mobile-member4-2x.jpg 2x"
-                    media="(max-width: 667px)"
+                      ./images/main/team-members/desktop-member4.jpg    1x,
+                      ./images/main/team-members/desktop-member4-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
                   />
                   <source
                     srcset="
                       ./images/main/team-members/tablet-member4.jpg    1x,
                       ./images/main/team-members/tablet-member4-2x.jpg 2x
                     "
-                    media="(min-width: 668px)"
+                    media="(min-width: 768px)"
                   />
-                  <source
-                    srcset="
-                      ./images/main/team-members/desktop-member4.jpg    1x,
-                      ./images/main/team-members/desktop-member4-2x.jpg 2x
-                    "
-                    media="(min-width: 1200px)"
-                  />
+
                   <img
                     src="./images/main/team-members/mobile-member4.jpg"
+                    srcset="./images/main/team-members/mobile-member4-2x.jpg"
                     alt="Młody mężczyzna w
             okularach, z zarostem, ubrany w czarny t-shirt"
                   />
@@ -479,7 +468,7 @@
 
       <!-- CUSTOMERS -->
 
-      <!-- <section class="customers section">
+      <section class="customers section">
         <div class="container">
           <h2 class="secondary-header">Nasi klienci</h2>
 
@@ -540,18 +529,18 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- END CUSTOMERS -->
     </main>
 
     <!-- FOOTER -->
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer__contact-details">
-            <a class="logo link" href="index.html">
-              <span class="web">Web</span>Studio</a
-            >
+          <a class="logo link" href="index.html">
+            <span class="web">Web</span>Studio</a
+          >
 
           <address class="footer__address">
             <a
@@ -567,11 +556,11 @@
               >+48 111 111 111</a
             >
           </address>
-        </div> -->
+        </div>
 
-    <!-- FOOTER SOCIALS -->
+        <!-- FOOTER SOCIALS -->
 
-    <!-- <div class="footer__social-media">
+        <div class="footer__social-media">
           <span class="footer__join-us">Dołącz do nas</span>
           <ul class="footer__socials list">
             <li class="footer__item">
@@ -603,11 +592,11 @@
               </a>
             </li>
           </ul>
-        </div> -->
+        </div>
 
-    <!-- FOOTER FORM -->
+        <!-- FOOTER FORM -->
 
-    <!-- <div class="footer__form-wrapper">
+        <div class="footer__form-wrapper">
           <form class="footer__form">
             <label class="footer__form-field">
               Zapisz się do newslettera
@@ -628,10 +617,10 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- BACKDROP -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
 
       <div class="modal">
         <button type="button" class="modal__close-btn" data-modal-close>
@@ -716,7 +705,7 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
     <!-- END BACKDROP -->
   </body>
 </html>

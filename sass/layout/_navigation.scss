@@ -48,12 +48,11 @@
 
 .navigation__contacts-item {
   align-items: center;
-  justify-content: center;
   display: flex;
 
   &:not(:last-child) {
   margin-right: 30px;
-  margin-left: 345px;
+  
 }
 }
 
@@ -88,3 +87,36 @@
 
 
 
+@media screen and (max-width:767px){
+  .navigation{
+    display: none;
+  }
+  .navigation__contacts{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+.navigation__contacts-list {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0px;
+  top: 21px;
+}
+
+.navigation__contacts-item {
+
+  &:not(:last-child) {
+  margin-bottom: 10px; 
+}
+}
+  
+}
+
+@media screen and (min-width: 1200px){
+  .navigation__contacts-list {
+  flex-direction: row;
+  margin-left: 345px;
+}
+}
