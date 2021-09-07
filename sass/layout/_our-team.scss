@@ -101,11 +101,14 @@
 
   .our-team__item:not(:last-child) {
   margin-right: 30px;
+}
+
+  .our-team__item{
   margin-bottom: 0px;
 }
-
-.our-team__grid{
+  
+  .our-team__grid{
   max-width: 270px;
-
 }
+
 }

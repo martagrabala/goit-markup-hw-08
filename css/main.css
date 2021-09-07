@@ -115,8 +115,8 @@ img {
   position: absolute;
   top: 93px;
   left: 10px;
-  max-width: 450px;
-  max-height: 609px;
+  min-width: 450px;
+  min-height: 609px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -254,7 +254,7 @@ img {
   border-color: #2196f3;
 }
 
-.modal-form__input:focus + .modal-form-icon {
+.modal-form__input:focus + .modal-form__icon {
   fill: #2196f3;
 }
 
@@ -705,6 +705,8 @@ img {
   }
   .our-team__item:not(:last-child) {
     margin-right: 30px;
+  }
+  .our-team__item {
     margin-bottom: 0px;
   }
   .our-team__grid {
@@ -945,9 +947,6 @@ img {
     display: flex;
     flex-direction: column;
   }
-  .footer__form-field {
-    padding-top: 60px;
-  }
   .footer__form-btn {
     margin-top: 20px;
     margin-bottom: 60px;
@@ -966,7 +965,6 @@ img {
   }
   .footer__contact-details {
     margin-right: 144px;
-    margin-left: 76px;
     width: 253px;
   }
   .footer__form {

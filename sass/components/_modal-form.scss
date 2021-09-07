@@ -31,11 +31,10 @@
     outline: none;
     border-color: #2196f3;
 }
-
-    &:focus + .modal-form-icon {
+}
+   .modal-form__input:focus + .modal-form__icon {
     fill: #2196f3;
-}
-}
+   }
 
 .modal-form__comment {
   resize: none;
